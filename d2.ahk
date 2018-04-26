@@ -6,7 +6,7 @@ p:: ;reset times to 0
 Times=0
 return
 o:: ;press o to move mouse to transute button and click then go back
-mousegetpos, posx, posy ;get mosue pos
+mousegetpos, posx, posy ;get mouse pos
 Times++
 mousemove 233, 330 ;move mouse to transmute button
 mouseclick
