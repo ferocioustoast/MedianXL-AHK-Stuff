@@ -2,6 +2,7 @@
 Times=0 ;store number times o is pressed
 SetDefaultMouseSpeed, 0 ; make mouse instant
 coordmode , mouse, client ;make mouse reletive to client so works better
+#IfWinActive ahk_class Diablo II
 p:: ;reset times to 0 
 Times=0
 return
