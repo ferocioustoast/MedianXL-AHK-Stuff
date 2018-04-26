@@ -1,4 +1,8 @@
-;make sure to run as admin or it dosent work
+if not A_IsAdmin { ;make sure admin or it breaks
+    Msgbox, You must run as admin for this to work
+    ExitApp
+}
+
 Times=0 ;store number times o is pressed
 SetDefaultMouseSpeed, 0 ; make mouse instant
 coordmode , mouse, client ;make mouse reletive to client so works better
