@@ -1,3 +1,5 @@
+#NoEnv ;said it was recommended
+SetKeyDelay, 50, 50 ;might be needed for sending keys
 if not A_IsAdmin { ;make sure admin or it breaks
     Msgbox, You must run as admin for this to work
     ExitApp
@@ -7,6 +9,13 @@ Times=0 ;store number times o is pressed
 SetDefaultMouseSpeed, 0 ; make mouse instant
 coordmode , mouse, client ;make mouse reletive to client so works better
 #IfWinActive ahk_class Diablo II
+l:: ;open last person used in single player, destruction diff
+mousemove 395,311
+mouseclick
+send {enter}
+mousemove 395,367
+mouseclick
+return
 p:: ;reset times to 0 
 Times=0
 return
