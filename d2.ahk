@@ -9,6 +9,18 @@ Times=0 ;store number times o is pressed
 SetDefaultMouseSpeed, 0 ; make mouse instant
 coordmode , mouse, client ;make mouse reletive to client so works better
 #IfWinActive ahk_class Diablo II
+Left:: ;move left a page in stash
+mousegetpos, posx, posy
+mousemove 228,456
+mouseclick
+mousemove %posx%, %posy%
+return
+Right:: ;move right a page in stash
+mousegetpos, posx, posy
+mousemove 256,462
+mouseclick
+mousemove %posx%, %posy%
+return
 l:: ;open last person used in single player, destruction diff
 mousemove 395,311
 mouseclick
